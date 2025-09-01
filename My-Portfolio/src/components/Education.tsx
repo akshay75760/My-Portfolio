@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Calendar, Award } from 'lucide-react';
+import { Calendar, Award } from 'lucide-react';
 
 const Education: React.FC = () => {
   const educationData = [
