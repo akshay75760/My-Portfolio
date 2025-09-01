@@ -36,6 +36,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   );
 };
 
+// Export hook separately to avoid React refresh warning
 export const useTheme = () => {
   const context = useContext(ThemeContext);
   if (context === undefined) {
@@ -43,3 +44,6 @@ export const useTheme = () => {
   }
   return context;
 };
+
+// Default export for better compatibility
+export default ThemeProvider;

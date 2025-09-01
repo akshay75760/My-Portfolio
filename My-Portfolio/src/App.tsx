@@ -9,7 +9,7 @@ import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-function App() {
+const App: React.FC = () => {
   return (
     <ThemeProvider>
       <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
@@ -24,6 +24,6 @@ function App() {
       </div>
     </ThemeProvider>
   );
-}
+};
 
 export default App;
